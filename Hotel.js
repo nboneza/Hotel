@@ -1,7 +1,13 @@
+
+
+//There should be a global variable here that stores the number of guests per room.
+var room1total = 0;
+
 //Room 1
 function checkIn() {
+    room1total++; //I will add +1 to the room1total global variable.
     var stuff = document.getElementsByTagName('li');
-    if (stuff.length > 3) {
+    if (room1total > 3) {  //IF the room1total is greater than 3
         alert("ROOM 1 IS FULL");
     }
     else {
@@ -17,8 +23,8 @@ function checkIn() {
         
     } 
 }
-
 function removeMe() {
+    room1total--;  //I remove one from the room1total variable
     var personNum = document.getElementById("remNum").value;
     var x = parseInt(personNum);
     var getChild = document.getElementsByTagName('li')[x - 1];
