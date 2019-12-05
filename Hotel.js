@@ -7,13 +7,14 @@ var room5total = 0;
 var room6total = 0;
 
 
-//Room 1
+///////////////////////////// START OF ROOM 1 ///////////////////////////////////////////////
 function checkIn() {
     if (room1total > 3) {  //IF the room1total is greater than 3
         alert("ROOM 1 IS FULL");
     }
     else {
         room1total++; //I will add +1 to the room1total global variable.
+
         var x = new Date();
         var y = x.toLocaleString();
         var newList = document.createElement('li');
@@ -28,7 +29,7 @@ function checkIn() {
     } 
 }
 function removeMe() {
-    room1total--;  //I remove one from the room1total variable
+    room1total = -1;  //I remove one from the room1total variable
     var personNum = document.getElementById("room1total").value;
     var x = parseInt(personNum);
 
@@ -50,12 +51,14 @@ function vTest() {
     }
 }
 
-function clear() {
-    document.getElementById('ol1') = "";
+function getout1() {  
+    var myList = document.getElementById('ol1');  //gets the ol1
+    myList.innerHTML = '';   //deletes all the stuff inside the ol
+    room1total = 0;  //resets the room1total back to 0
+    }
 
-}
 
-
+///////////////////////////// END OF ROOM 1 ///////////////////////////////////////////////
 
 
 
@@ -85,7 +88,7 @@ function checkIn2() {
 }
 
 function removeMe2() {
-    room2total--; //I will remove -1 to the room1total global variable.
+    room2total--; // CHANGE THIS TO = -1
     var personNum = document.getElementById("room2total").value;
     var x = parseInt(personNum);
     var getChild = document.getElementsByClassName('newLi2')[x - 1];
