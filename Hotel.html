@@ -1,0 +1,154 @@
+<html>
+    <link rel="stylesheet" href="Hotel.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">    
+    <script src = "Hotel.js"></script>
+    <body>
+
+    <title>Hotel</title>
+    <img src="HazH.png" width="auto" height="13.5%">
+    <h1>Hazbin Hotel</h1>
+        <div id ="one">
+            <p>Room 1</p>
+            <input type="text" id="user" style="font-size: 20px" placeholder="Enter name">
+            <button onclick="checkIn()" id="z">Check In</button>
+            <ol id='ol1'></ol>
+            <input type="number" id="room1total" style="font-size: 20px" placeholder="# of guest checking out">
+            <button onclick="removeMe()">Check Out</button>
+            <br>
+            <button onclick="vTest()" >Close</button>
+            <button onclick="getout1()" >Clear Room</button>
+
+        </div>
+
+
+        <div id ="two">
+            <p>Room 2</p>
+            <input type="text" id="userTwo" style="font-size: 20px" placeholder="Enter name">
+            <button onclick="checkIn2()" id="zTwo">Check In</button>
+            <ol id='ol2'></ol>
+            <input type="number" id="room2total" style="font-size: 20px" placeholder="# of guest checking out">
+            <button onclick="removeMe2()" id="click">Check Out</button>
+            <br>
+            <button onclick="vTest2()" >Close</button>
+            <button onclick="getout2()" >Clear Room</button>
+        </div>
+    
+
+
+        <div id ="three">
+            <p>Room 3</p>
+            <input type="text" id="userThree" style="font-size: 20px" placeholder="Enter name">
+            <button onclick="checkIn3()" id="zThree">Check In</button>
+            <ol id='ol3'></ol>
+            <input type="number" id="room3total" style="font-size: 20px" placeholder="# of guest checking out">
+            <button onclick="removeMe3()" id="click2">Check Out</button>
+            <br>
+            <button onclick="vTest3()" >Close</button>
+            <button onclick="getout3()" >Clear Room</button>
+        </div>
+
+
+        <div id ="four">
+            <p>Room 4</p>
+            <input type="text" id="userFour" style="font-size: 20px" placeholder="Enter name">
+            <button onclick="checkIn4()" id="zFour">Check In</button>
+            <ol id='ol4'></ol>
+            <input type="number" id="room4total" style="font-size: 20px" placeholder="# of guest checking out">
+            <button onclick="removeMe4()">Check Out</button>
+            <br>
+            <button onclick="vTest4()" >Close</button>
+            <button onclick="getout4()" >Clear Room</button>
+        </div>
+
+
+        <div id ="five">
+            <p>Room 5</p>
+            <input type="text" id="userFive" style="font-size: 20px" placeholder="Enter name">
+            <button onclick="checkIn5()" id="zFive">Check In</button>
+            <ol id='ol5'></ol>
+            <input type="number" id="room5total" style="font-size: 20px" placeholder="# of guest checking out">
+            <button onclick="removeMe5()">Check Out</button>
+            <br>
+            <button onclick="vTest5()" >Close</button>
+            <button onclick="getout5()" >Clear Room</button>
+        </div>
+
+
+        <div id ="six">
+            <p>Room 6</p>
+            <input type="text" id="userSix" style="font-size: 20px" placeholder="Enter name">
+            <button onclick="checkIn6()" id="zSix">Check In</button>
+            <ol id='ol6'></ol>
+            <input type="number" id="room6total" style="font-size: 20px" placeholder="# of guest checking out">
+            <button onclick="removeMe6()">Check Out</button>
+            <br>
+            <button onclick="vTest6()" >Close</button>
+            <button onclick="getout6()" >Clear Room</button>
+        </div>
+       
+
+        <div id = "allguests">
+                <p>All Guests</p>
+                <ol id="scriptall"></ol>
+        </div>
+    
+</body>
+
+    <script>
+        //For room 1 to click the add guest button if enter is hit
+        var input = document.getElementById("user");
+        input.addEventListener("keyup", function(event) {
+          if (event.keyCode === 13) {
+           event.preventDefault();
+           document.getElementById("z").click();
+          }
+        });
+        
+        //For room 2 
+        var input = document.getElementById("userTwo");
+        input.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("zTwo").click();
+            }
+        });
+
+        //For room 3
+        var input = document.getElementById("userThree");
+        input.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("zThree").click();
+            }
+        });
+
+        //For room 4
+        var input = document.getElementById("userFour");
+        input.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("zFour").click();
+            }
+        });
+
+        //For room 5
+        var input = document.getElementById("userFive");
+        input.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("zFive").click();
+            }
+        });
+
+        //For room 6
+        var input = document.getElementById("userSix");
+        input.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("zSix").click();
+            }
+        });
+    </script>
+
+
+</html>
